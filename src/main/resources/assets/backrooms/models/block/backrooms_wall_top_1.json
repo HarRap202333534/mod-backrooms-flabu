@@ -132,6 +132,9 @@
         0.3
       ]
     },
+    "ground": {
+      "scale": [0.3,0.3,0.3]
+    },
     "groups": [
       {
         "name": "group",

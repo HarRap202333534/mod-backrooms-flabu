@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 public class FacingBlock extends HorizontalFacingBlock {
-	public static DirectionProperty FACING = Properties.FACING;
+	public static DirectionProperty FACING = HorizontalFacingBlock.FACING;
 
 
 	protected FacingBlock(Settings settings) {
@@ -27,7 +27,7 @@ public class FacingBlock extends HorizontalFacingBlock {
 	@Override
 	public void onPlaced(World world, BlockPos pos, BlockState state, @Nullable LivingEntity placer, ItemStack itemStack) {
 		super.onPlaced(world, pos, state, placer, itemStack);
-		world.setBlockState(pos, state.with(FACING, placer.getHorizontalFacing().getOpposite()));
+		world.setBlockState(pos, state.with(FACING, placer.getHorizontalFacing()));
 	}
 
 	@Override

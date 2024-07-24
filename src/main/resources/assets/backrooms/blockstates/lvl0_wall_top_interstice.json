@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "backrooms:block/backrooms_wall_top_interstice",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "backrooms:block/backrooms_wall_top_interstice",
+      "y": 270
+    },
+    "facing=west": {
+      "model": "backrooms:block/backrooms_wall_top_interstice",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "backrooms:block/backrooms_wall_top_interstice"
+    }
+  }
+}

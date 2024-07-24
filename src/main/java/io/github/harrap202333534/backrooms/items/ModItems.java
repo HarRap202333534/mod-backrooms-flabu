@@ -24,6 +24,11 @@ public class ModItems {
 	public static final Item LVL0_WALL_TOP_1 = registerItem("lvl0_wall_top_1", new BlockItem(ModBlocks.LVL0_WALL_TOP_1, new QuiltItemSettings()));
 	public static final Item LVL0_WALL = registerItem("lvl0_wall", new BlockItem(ModBlocks.LVL0_WALL, new QuiltItemSettings()));
 	public static final Item LVL0_FLOOR = registerItem("lvl0_floor", new BlockItem(ModBlocks.LVL0_FLOOR, new QuiltItemSettings()));
+	public static final Item LVL0_WALL_INTERSTICE = registerItem("lvl0_wall_interstice", new BlockItem(ModBlocks.LVL0_WALL_INTERSTICE, new QuiltItemSettings()));
+	public static final Item LVL0_WALL_BASE_INTERSTICE = registerItem("lvl0_wall_base_interstice", new BlockItem(ModBlocks.LVL0_WALL_BASE_INTERSTICE, new QuiltItemSettings()));
+	public static final Item LVL0_WALL_TOP_INTERSTICE = registerItem("lvl0_wall_top_interstice", new BlockItem(ModBlocks.LVL0_WALL_TOP_INTERSTICE, new QuiltItemSettings()));
+	public static final Item LVL0_CEILING = registerItem("lvl0_ceiling", new BlockItem(ModBlocks.LVL0_CEILING, new QuiltItemSettings()));
+	public static final Item TEST = registerItem("test", new BlockItem(ModBlocks.TEST, new QuiltItemSettings()));
 
 	private static Item registerItem(String name, Item item) {
 		return Registry.register(Registries.ITEM, new Identifier(Backrooms.MOD_ID, name), item);

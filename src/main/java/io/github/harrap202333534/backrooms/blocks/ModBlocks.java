@@ -15,6 +15,8 @@ import net.minecraft.util.Identifier;
 import org.quiltmc.qsl.block.extensions.api.QuiltBlockSettings;
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 
+import javax.print.DocFlavor;
+
 public class ModBlocks {
 	public static final Block LVL0_WALL_BASE_1 = registerBlock("lvl0_wall_base_1", new Block(QuiltBlockSettings.copyOf(Blocks.OAK_PLANKS)));
 	public static final Block LVL0_WALL_BASE_2 = registerBlock("lvl0_wall_base_2", new FacingBlock(QuiltBlockSettings.copyOf(Blocks.OAK_PLANKS)));
@@ -27,6 +29,12 @@ public class ModBlocks {
 	public static final Block LVL0_WALL_TOP_1 = registerBlock("lvl0_wall_top_1", new Block(QuiltBlockSettings.copyOf(Blocks.OAK_PLANKS)));
 	public static final Block LVL0_WALL = registerBlock("lvl0_wall", new Block(QuiltBlockSettings.copyOf(Blocks.OAK_PLANKS)));
 	public static final Block LVL0_FLOOR = registerBlock("lvl0_floor", new Block(QuiltBlockSettings.copyOf(Blocks.WHITE_WOOL)));
+	public static final Block LVL0_WALL_INTERSTICE = registerBlock("lvl0_wall_interstice", new IntersticeBlock(QuiltBlockSettings.copyOf(Blocks.WHITE_WOOL)));
+	public static final Block LVL0_WALL_BASE_INTERSTICE = registerBlock("lvl0_wall_base_interstice", new IntersticeBlock(QuiltBlockSettings.copyOf(Blocks.WHITE_WOOL)));
+	public static final Block LVL0_WALL_TOP_INTERSTICE = registerBlock("lvl0_wall_top_interstice", new IntersticeBlock(QuiltBlockSettings.copyOf(Blocks.WHITE_WOOL)));
+	public static final Block LVL0_CEILING = registerBlock("lvl0_ceiling", new Block(QuiltBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+
+	public static final Block TEST = registerBlock("test", new LightBlock(QuiltBlockSettings.copyOf(Blocks.GLASS).luminance(15)));
 
 	private static void addBlockItemsToBuildingBlocksTab(FabricItemGroupEntries entries){
 		entries.addItem(LVL0_WALL_BASE_1);
@@ -40,6 +48,11 @@ public class ModBlocks {
 		entries.addItem(LVL0_WALL_TOP_1);
 		entries.addItem(LVL0_WALL);
 		entries.addItem(LVL0_FLOOR);
+		entries.addItem(LVL0_WALL_INTERSTICE);
+		entries.addItem(LVL0_WALL_BASE_INTERSTICE);
+		entries.addItem(LVL0_WALL_TOP_INTERSTICE);
+		entries.addItem(LVL0_CEILING);
+		entries.addItem(TEST);
 	}
 
 	private static Block registerBlock(String id, Block block) {
