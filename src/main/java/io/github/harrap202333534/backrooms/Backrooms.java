@@ -2,6 +2,7 @@ package io.github.harrap202333534.backrooms;
 
 import io.github.harrap202333534.backrooms.blocks.ModBlocks;
 import io.github.harrap202333534.backrooms.items.ModItems;
+import net.minecraft.block.JigsawBlock;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.slf4j.Logger;

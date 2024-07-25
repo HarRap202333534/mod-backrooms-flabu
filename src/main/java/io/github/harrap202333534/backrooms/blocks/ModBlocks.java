@@ -18,6 +18,7 @@ import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 import javax.print.DocFlavor;
 
 public class ModBlocks {
+	public static final Block CUSTOM_JIGSAW = registerBlock("custom_jigsaw", new CustomJigsawBlock(QuiltBlockSettings.create()));
 	public static final Block LVL0_WALL_BASE_1 = registerBlock("lvl0_wall_base_1", new Block(QuiltBlockSettings.copyOf(Blocks.OAK_PLANKS)));
 	public static final Block LVL0_WALL_BASE_2 = registerBlock("lvl0_wall_base_2", new FacingBlock(QuiltBlockSettings.copyOf(Blocks.OAK_PLANKS)));
 	public static final Block LVL0_WALL_BASE_3 = registerBlock("lvl0_wall_base_3", new FacingBlock(QuiltBlockSettings.copyOf(Blocks.OAK_PLANKS)));
@@ -53,6 +54,7 @@ public class ModBlocks {
 		entries.addItem(LVL0_WALL_TOP_INTERSTICE);
 		entries.addItem(LVL0_CEILING);
 		entries.addItem(TEST);
+		entries.addItem(CUSTOM_JIGSAW);
 	}
 
 	private static Block registerBlock(String id, Block block) {

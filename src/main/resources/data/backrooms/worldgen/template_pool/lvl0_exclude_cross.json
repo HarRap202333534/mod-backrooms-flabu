@@ -1,0 +1,14 @@
+{
+  "name": "backrooms:lvl0_exclude_cross",
+  "elements": [
+    {
+      "element": {
+        "location": "backrooms:room1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ],
+  "fallback": "minecraft:empty"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "backrooms:lvl0_cross_pillar",
+  "elements": [
+    {
+      "element": {
+        "location": "backrooms:cross",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      },
+      "weight": 65
+    },
+    {
+      "element": {
+        "location": "backrooms:room1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      },
+      "weight": 35
+    }
+  ],
+  "fallback": "minecraft:empty"
+}
