@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:jigsaw",
+
+  "start_pool": "backrooms:start",
+
+  "size": 7,
+
+  "max_distance_from_center": 80,
+
+  "biomes": "#backrooms:has_structure/room1",
+
+  "step": "surface_structures",
+
+  "start_height": {
+    "absolute": 50
+  },
+
+  "use_expansion_hack": false,
+
+  "spawn_overrides": {},
+
+  "start_jigsaw_name": "backrooms:start"
+}

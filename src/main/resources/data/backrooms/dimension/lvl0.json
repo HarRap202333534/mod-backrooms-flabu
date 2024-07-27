@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:overworld",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "backrooms:lvl0_biome",
+      "lakes": false,
+      "features": false,
+      "layers": []
+    }
+  }
+}

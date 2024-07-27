@@ -16,7 +16,8 @@
         },
         "intermediate_mappings": "net.fabricmc:intermediary",
         "entrypoints": {
-            "init": "io.github.harrap202333534.backrooms.Backrooms"
+            "init": "io.github.harrap202333534.backrooms.Backrooms",
+						"client_init": "io.github.harrap202333534.backrooms.BackroomsClient"
         },
         "depends": [
             {
